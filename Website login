@@ -1,0 +1,29 @@
+package web_driver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class auto {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\shahnawaz hussain\\Desktop\\Software testing\\chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("http://demo.guru99.com/test/login.html");
+		driver.findElement(By.id("email")).sendKeys("dmo@check.com");
+		driver.findElement(By.name("passwd")).sendKeys("password123");
+		driver.findElement(By.xpath("//*[@id=\'SubmitLogin\']")).click();
+		Thread.sleep(5000);
+		String afterloginurl = "http://demo.guru99.com/test/success.html";
+		String currenturl = driver.getCurrentUrl();
+		if (currenturl.equals(afterloginurl)) {
+			System.out.println("Login Sucessful_Test Passed");
+
+		} else {
+			System.out.println("Login UnSucessful_TestFailed");
+
+		}
+		driver.quit();
+	}
+
+}
