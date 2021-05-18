@@ -29,27 +29,27 @@ public class decision {
 	    Patient p=new Patient();
 	    p.setName("shahnawaz");
 	    p.setlocation("jharkhand");
-	    p.setdate1(new SimpleDateFormat("dd/MM/yyyy").parse("15/06/2021"));
+	    p.setdate1(new SimpleDateFormat("dd/MM/yyyy").parse("12/5/2021"));
 	    allPatient.add(p);
 	    Patient p2=new Patient();
 	    p2.setName("kame");
 	    p2.setlocation("asam");
-	    p2.setdate1(new SimpleDateFormat("dd/MM/yyyy").parse("15/06/2021"));
+	    p2.setdate1(new SimpleDateFormat("dd/MM/yyyy").parse("13/05/2021"));
 	    allPatient.add(p2);
 	    Patient p3=new Patient();
 	    p3.setName("sayeedur");
 	    p3.setlocation("mangalore");
-	    p3.setdate1(new SimpleDateFormat("dd/MM/yyyy").parse("15/06/2021"));
+	    p3.setdate1(new SimpleDateFormat("dd/MM/yyyy").parse("14/05/2021"));
 	    allPatient.add(p3);
 	    Patient p4=new Patient();
 	    p4.setName("abhishekh");
 	    p4.setlocation("Bangalore");
-	    p4.setdate1(new SimpleDateFormat("dd/MM/yyyy").parse("15/06/2021"));
+	    p4.setdate1(new SimpleDateFormat("dd/MM/yyyy").parse("16/05/2021"));
 	    allPatient.add(p4);
 	    Patient p5=new Patient();
 	    p5.setName("naresh");
 	    p5.setlocation("Bangalore");
-	    p5.setdate1(new SimpleDateFormat("dd/MM/yyyy").parse("15/06/2021"));
+	    p5.setdate1(new SimpleDateFormat("dd/MM/yyyy").parse("17/05/2021"));
 	    allPatient.add(p5);
 	    
 	    int sizeAll=allPatient.size();
@@ -71,7 +71,7 @@ public class decision {
 	    
 	    
 	    Double inPatientPercentage = Double.valueOf(bcount * 100 / sizeAll);
-        Double outPatientPercentage = Double.valueOf(ocount * 100 / sizeAll);
+       	    Double outPatientPercentage = Double.valueOf(ocount * 100 / sizeAll);
 	    System.out.println("Percentage of total patient  from bangalore  "+inPatientPercentage);
 	    System.out.println("Percentage of total patient  from outside of bangalore  "+outPatientPercentage);
 
